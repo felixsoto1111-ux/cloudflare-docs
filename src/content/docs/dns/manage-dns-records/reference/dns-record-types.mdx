@@ -18,7 +18,7 @@ At least one **IP address resolution** record is required for each domain on Clo
 
 ### A and AAAA
 
-<Render file="a-aaaa-definition" />
+<Render file="a-aaaa-definition" 
 
 These records include the following fields:
 
@@ -47,7 +47,7 @@ When creating A or AAAA records [using the API](/dns/manage-dns-records/how-to/c
 * The `content` of the records is an IP address (IPv4 for A or IPv6 for AAAA).
 * The `proxied` field affects the record's [proxy status](/dns/proxy-status/).
 
-<Render file="api-field-definitions" />
+<Render file="api-field-definitions" 
 
 <APIRequest
   path="/zones/{zone_id}/dns_records"
@@ -67,8 +67,8 @@ When creating A or AAAA records [using the API](/dns/manage-dns-records/how-to/c
 ```json title="Response"
 {
   "result": {
-    "id": "<ID>",
-    "zone_id": "<ZONE_ID>",
+    "id": 
+    "zone_id": 
     "zone_name": "example.com",
     "name": "www.example.com",
     "type": "A",
@@ -81,13 +81,13 @@ When creating A or AAAA records [using the API](/dns/manage-dns-records/how-to/c
       "source": "primary"
     },
     "comment": null,
-    "tags": [],
+    "tags":
     "created_on": "2023-01-17T20:37:05.368097Z",
     "modified_on": "2023-01-17T20:37:05.368097Z"
   },
   "success": true,
-  "errors": [],
-  "messages": []
+  "errors": 
+  "messages": 
 }
 ```
 
